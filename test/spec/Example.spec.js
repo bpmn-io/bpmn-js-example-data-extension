@@ -8,6 +8,7 @@ import ZeebeModdle from 'zeebe-bpmn-moddle/resources/zeebe';
 import VariablesModule from '@bpmn-io/variable-resolver';
 
 import VariableProvider from 'lib/';
+import exampleDataModdle from 'lib/exampleData.json';
 
 import Modeler from 'bpmn-js/lib/Modeler';
 
@@ -50,7 +51,8 @@ describe('Example', function() {
         ZeebePropertiesProviderModule
       ],
       moddleExtensions = {
-        zeebe: ZeebeModdle
+        zeebe: ZeebeModdle,
+        exampleData: exampleDataModdle
       },
       description = {},
       layout = {}

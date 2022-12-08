@@ -1,0 +1,23 @@
+{
+  "name": "Example Data",
+  "uri": "https://github.com/bpmn-io/bpmn-js-example-data-extension/",
+  "prefix": "exampleData",
+  "xml": {
+      "tagAlias": "lowerCase"
+  },
+  "types": [
+      {
+      "name": "output",
+      "superClass": [ "Element" ],
+      "properties": [
+        {
+          "name": "data",
+          "isBody": true,
+          "type": "String"
+        }
+      ]
+      }
+  ],
+  "emumerations": [],
+  "associations": []
+}
