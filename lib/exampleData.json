@@ -7,7 +7,7 @@
   },
   "types": [
       {
-      "name": "output",
+      "name": "Output",
       "superClass": [ "Element" ],
       "properties": [
         {

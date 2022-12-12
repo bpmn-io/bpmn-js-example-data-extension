@@ -2,7 +2,7 @@
   "name": "bpmn-js-example-data-extension",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "dev": "npm test -- --auto-watch --no-single-run",
     "start": "cross-env SINGLE_START=true npm run dev",
@@ -18,8 +18,8 @@
     "min-dash": "^4.0.0"
   },
   "devDependencies": {
-    "@bpmn-io/properties-panel": "^1.0.1",
-    "bpmn-js-properties-panel": "github:bpmn-io/bpmn-js-properties-panel#variable-handling",
+    "@bpmn-io/properties-panel": "^1.1.0",
+    "bpmn-js-properties-panel": "github:bpmn-io/bpmn-js-properties-panel#0738ece5514b78f1dfac8a0eefc2a62288f021b2",
     "camunda-bpmn-js-behaviors": "^0.4.0",
     "chai": "^4.3.7",
     "cross-env": "^7.0.3",

@@ -103,7 +103,8 @@ describe('Example', function() {
           VariableProvider
         ],
         moddleExtensions: {
-          zeebe: ZeebeModdle
+          zeebe: ZeebeModdle,
+          exampleData: exampleDataModdle
         },
       });
 

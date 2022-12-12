@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:exampleData="https://github.com/bpmn-io/bpmn-js-example-data-extension/" id="Definitions_0uo7yqr" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.5.1" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:exampleData="https://github.com/bpmn-io/bpmn-js-example-data-extension/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0uo7yqr" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.6.0-rc.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0">
   <bpmn:process id="Process_1" isExecutable="true">
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>Flow_16gvdav</bpmn:outgoing>
@@ -13,11 +13,18 @@
       <bpmn:extensionElements>
         <exampleData:output>
           {
-            "foo": "bar"
+            "foo": {
+                "bar": 15,
+                "baz": [
+                  {
+                  "id": "anyId"
+                  }
+                ]
+            }
           }
         </exampleData:output>
         <zeebe:ioMapping>
-          <zeebe:output source="" target="OutputVariable_0cvb04v" />
+          <zeebe:output target="OutputVariable_0cvb04v" />
         </zeebe:ioMapping>
       </bpmn:extensionElements>
       <bpmn:incoming>Flow_16gvdav</bpmn:incoming>
